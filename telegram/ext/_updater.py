@@ -92,7 +92,7 @@ class Updater(AbstractAsyncContextManager):
         self,
         bot: "Bot",
         update_queue: asyncio.Queue,
-    ):
+    ) -> object:
         self.bot = bot
         self.update_queue = update_queue
 
